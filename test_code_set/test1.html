@@ -5,14 +5,41 @@
     <title>JavaScript-test</title>
     <script>
         function displayDate() {
-            document.getElementById("demo").innerHTML = Date();
+            document.getElementById("dt").innerHTML = Date();
+        }
+        function myFunction(){
+            document.getElementById("t2").innerHTML = "段落内容被更改。";
         }
     </script>
 </head>
 <body>
 
 <h1>我的第一个javascript程序</h1>
+<h2>JavaScript 能够做什么</h2>
 <p id="demo">只是一个段落</p>
-<button type="button" onclick="displayDate()">显示日期</button>
+<p id="dt"></p>
+<button type="button" onclick="displayDate()">显示日期</button><br/>
+<p id="demo1">JavaScript 能够改变 HTML 内容。</p>
+
+<button type="button" onclick='document.getElementById("demo1").innerHTML="Hello JavaScript!"'>点击我</button>
+<br/>
+<p>JavaScript 能够改变 HTML 属性值。</p>
+<p>在本例中，JavaScript 改变了图像的 src 属性值。</p>
+<button onclick="document.getElementById('myImage').src='eg_bulbon.gif'">开灯</button>
+<img id="myImage" border="0" src="eg_bulboff.gif" style="text-align:center;">
+<button onclick="document.getElementById('myImage').src='eg_bulboff.gif'">关灯</button><br/>
+<br/>
+<p id="demo2">JavaScript 能够隐藏HTML元素</p>
+<button type="reset" onclick="document.getElementById('demo2').style.display='none'">隐藏元素</button>
+<button type="submit" onclick="document.getElementById('demo2').style.display='block'">显示元素</button><br/>
+<br/>
+<h2>Body 中的 JavaScript</h2>
+<p id="p1"></p>
+<script>
+    document.getElementById("p1").innerHTML = "Body 中的 JavaScript";
+</script>
+<h2>Head 中的 JavaScript</h2>
+<p id="t2">该段落的内容将被更改！</p>
+<button type="button" onclick="myFunction()">试一试</button>
 </body>
 </html>
