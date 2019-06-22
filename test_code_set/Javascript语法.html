@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 语法</title>
+</head>
+<body>
+<div id="maincontent">
+    <h1>JavaScript 语法</h1>
+    <div id="intro">
+        <p><strong>JavaScript <em>语法</em>是一套规则，它定义了 JavaScript 的语言结构。</strong></p>
+        <pre>
+            var x, y;<span class="code_comment">// 如何声明变量</span>
+            x = 7; y = 8;<span class="code_comment">// 如何赋值</span>
+            z = x + y;<span class="code_comment">// 如何计算值</span>
+        </pre>
+    </div>
+    <div>
+        <h2>JavaScript 值</h2>
+        <p>JavaScript 语句定义两种类型的值：混合值和变量值。</p>
+        <p>
+            混合值被称为<em>字面量（literal）</em>。变量值被称为<em>变量</em>"。"
+        </p>
+    </div>
+    <div>
+        <h2>JavaScript 字面量</h2>
+        <p>书写混合值最重要的规则是：</p>
+        <p>写<em>数值</em>
+            有无小数点均可：
+        </p>
+        <pre>
+            15.90
+            10011
+        </pre>
+        <p><em>字符串</em>
+            是文本，由双引号或单引号包围：
+        </p>
+        <pre>"Bill Gates"
+            'Bill Gates'
+        </pre>
+    </div>
+    <div>
+        <h2>JavaScript 变量</h2>
+        <p>
+            在编程语言中，<em>变量</em>用于<em>存储</em>数据值。
+        </p>
+        <p>
+            JavaScript 使用<span class="code_marked">var</span>关键词来<em>声明</em>变量。
+        </p>
+        <p>
+            <span class="code_marked">=</span>号用于为变量<em>赋值</em>。
+        </p>
+        <p>
+            在本例中，x 被定义为变量。然后，x 被赋的值是 7：
+        </p>
+        <pre>
+            var x;
+            x = 7;
+        </pre>
+    </div>
+    <div>
+        <h2>JavaScript 运算符</h2>
+        <p>
+            JavaScript 使用<em>算数运算符</em>
+            （
+            <span class="code_marked">+</span>
+            <span class="code_marked">-</span>
+            <span class="code_marked">*</span>
+            <span class="code_marked">/</span>
+            ）来<em>计算值</em>"："
+        </p>
+        <pre>
+            (7 + 8) * 10
+        </pre>
+        <p>
+            JavaScript 使用
+            <em>赋值运算符</em>
+            （
+            <span class="code_marked">=</span>
+            ）向变量<em>赋值</em>：
+        </p>
+        <pre>
+            var x, y;
+            var x = 7;
+            var y = 8;
+        </pre>
+    </div>
+    <div>
+        <h2>JavaScript 表达式</h2>
+        <p>表达式是值、变量和运算符的组合，计算结果是值。</p>
+        <pre>6 * 10</pre>
+        <p>表达式也可包含变量值：</p>
+        <pre>x * 10</pre>
+        <p>值可以是多种类型，比如数值和字符串。</p>
+        <p>例如，"Bill" + " " + "Gates"，计算为 "Bill Gates"：</p>
+        <pre>"Bill" + " " + "Gates"</pre>
+    </div>
+    <div>
+        <h2>JavaScript 关键词</h2>
+        <p>
+            JavaScript
+            <em>关键词</em>"
+            用于标识被执行的动作。
+        </p>
+        <p>
+            <span class="code_marked">var</span>
+            关键词告知浏览器创建新的变量：
+        </p>
+        <pre>
+            var x = 7 + 8;
+            var y = x * 10;
+        </pre>
+    </div>
+    <div>
+        <h2>JavaScript 注释</h2>
+        <p>并非所有 JavaScript 语句都被“执行”。</p>
+        <p>
+            双斜杠"<span class="code_marked">//</span>"
+            或 "<span class="code_marked">/*</span>"
+            与"<em>*/</em>"之间的代码被视为<em>注释</em>。
+        </p>
+        <p>注释会被忽略，不会被执行：</p>
+        <pre>
+            var x = 7;<span class="code_comment">// 会执行</span>
+            // var x = 8;   不会执行
+        </pre>
+    </div>
+    <div>
+        <h2>JavaScript 标识符</h2>
+        <p>标识符是名称。</p>
+        <p>在 JavaScript 中，标识符用于命名变量（以及关键词、函数和标签）。</p>
+        <p>在大多数编程语言中，合法名称的规则大多相同。</p>
+        <p>在 JavaScript 中，首字符必须是字母、下划线（-）或美元符号（$）。</p>
+        <p>连串的字符可以是字母、数字、下划线或美元符号。</p>
+        <p class="tip">
+            <span>提示：</span>
+            数值不可以作为首字符。这样，JavaScript 就能轻松区分标识符和数值。
+        </p>
+    </div>
+    <div>
+        <h2>JavaScript 对大小写敏感</h2>
+        <p>
+            所有 JavaScript 标识符<em>对大小写敏感</em>。
+        </p>
+        <p>
+            变量"<span class="marked">lastName</span>"
+            和"<span class="marked">lastname</span>"
+            ，是两个不同的变量。
+        </p>
+        <pre>
+            lastName = "Gates";
+            lastname = "Jobs";
+        </pre>
+        <p>
+            JavaScript 不会把"<em>VAR</em>"或"<em>Var</em>"译作关键词
+            "<em>var</em>"。
+        </p>
+    </div>
+    <div>
+        <h2>JavaScript 与驼峰式大小写</h2>
+        <p>历史上，程序员曾使用三种把多个单词连接为一个变量名的方法：</p>
+        <h3>连字符：</h3>
+        <pre>first-name, last-name, master-card, inter-city.</pre>
+        <p class="note">
+            <span>注释：</span>JavaScript 中不能使用连字符。它是为减法预留的。
+        </p>
+        <h3>下划线：</h3>
+        <pre>first_name, last_name, master_card, inter_city.</pre>
+        <h3>驼峰式大小写（Camel Case）：</h3>
+        <pre>FirstName, LastName, MasterCard, InterCity.</pre>
+        <img src="camelcase.png" alt="camelCase">
+        <p>JavaScript 程序员倾向于使用以小写字母开头的驼峰大小写：</p>
+        <pre>firstName, lastName, masterCard, interCity</pre>
+    </div>
+    <div>
+        <h2>JavaScript 字符集</h2>
+        <p>
+            JavaScript 使用<em>Unicode</em>字符集。
+        </p>
+        <p>Unicode 覆盖世界上几乎所有的字符、标点和符号。</p>
+    </div>
+</div>
+</body>
+</html>
