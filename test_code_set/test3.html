@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript 代码测试</title>
+    <style type="text/css">
+        .datainttable{
+            border-collapse: collapse;
+            border-bottom:black 1px solid;
+        }
+    </style>
+</head>
+<body>
+<h2>Javascript 语句</h2>
+<p><b>Javascript 程序</b>是一系列由计算机执行的<b>语句</b>。</p>
+<p id="demo"></p>
+<script>
+    var x, y, z;
+    x = 22;
+    y = 11;
+    z = x + y;
+    document.getElementById("demo").innerHTML = "Z 的值是" + z + "。";
+</script>
+<p>Javascript <b>代码块</b>在<b>{</b>与<b>}</b>之间编写</p>
+<button type="button" onclick="myFunction2()">点击我</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+    function myFunction2() {
+        document.getElementById("demo1").innerHTML = "Hello Kitty.";
+        document.getElementById("demo2").innerHTML = "How are you?";
+    }
+</script>
+<div>
+    <h2> JavaScript关键词 </h2>
+    <p> JavaScript 语句常常通过某个关键词来标识需要执行的 JavaScript 动作。</p>
+    <p> 下面的表格列出了一部分将在教程中学到的关键词：</p>
+    <table border="1" class="datainttable" frame="hsides" rules="grounps" width="50%">
+        <tbody>
+        <tr>
+            <th> 关键词 </th>
+            <th> 描述 </th>
+        </tr>
+        <tr>
+            <td >break</td>
+            <td > 终止 switch 或循环 。</td>
+        </tr>
+        <tr>
+            <td >continue</td>
+            <td> 跳出循环并在顶端开始。</td>
+        </tr>
+        <tr >
+            <td >debugger</td>
+            <td > 停止执行 JavaScript，并调用调试函数（如果可用）。</td>
+        </tr>
+        <tr>
+            <td >do . .. while </td>
+            <td > 执行语句块，并在条件为真时重复代码块。</td>
+        </tr>
+        <tr>
+            <td>for</td>
+            <td > 标记需被执行的语句块，只要条件为真。</td>
+        </tr>
+        <tr >
+            <td > function </td>
+            <td > 声明函数。</td>
+        </tr>
+        <tr>
+            <td>if . .. else </td>
+            <td > 标记需被执行的语句块，根据某个条件。</td>
+        </tr>
+        <tr >
+            <td >return</td>
+            <td > 退出函数。</td>
+        </tr>
+        <tr >
+            <td >switch </td>
+            <td > 标记需被执行的语句块，根据不同的情况。</td>
+        </tr>
+        <tr >
+            <td >try ... catch </td>
+            <td > 对语句块实现错误处理。</td>
+        </tr>
+        <tr >
+            <td >var </td>
+            <td > 声明变量。</td>
+        </tr>
+        </tbody>
+    </table>
+    <p class= "note"> <span> 注释：</span>JavaScript 关键词指的是保留的单词。保留词无法用作变量名。</p >
+</div>
+</body>
+</html>
