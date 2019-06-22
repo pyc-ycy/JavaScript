@@ -7,7 +7,7 @@
         function displayDate() {
             document.getElementById("dt").innerHTML = Date();
         }
-        function myFunction(){
+        function myFunction1(){
             document.getElementById("t2").innerHTML = "段落内容被更改。";
         }
     </script>
@@ -40,6 +40,11 @@
 </script>
 <h2>Head 中的 JavaScript</h2>
 <p id="t2">该段落的内容将被更改！</p>
+<button type="button" onclick="myFunction1()">试一试</button>
+<h2>外部 JavaScript</h2>
+<p id="demo4">测试段落</p>
 <button type="button" onclick="myFunction()">试一试</button>
+<p>（myFunction 存储在名为 "myScript.js" 的外部文件中。）</p>
+<script src="myScript.js"></script>
 </body>
 </html>
