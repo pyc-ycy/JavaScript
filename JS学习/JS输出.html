@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 输出</title>
+</head>
+<body>
+<h1>本网页用于JavaScript的输出语句测试</h1>
+<h2>1、使用 innerHTML </h2>
+<p>下面一个段落，用于测试 InnerHTML 方法输出内容</p>
+<p id="demo"></p>
+<script>
+    document.getElementById("demo").innerHTML = 5 + 6;
+</script>
+<h2>2、使用 document.write()</h2>
+<p>下面显示使用 document.write() 写入 HTML 输出</p>
+<script>
+    document.write("JavaScript 是网页脚本语言");
+</script>
+<h2>3、使用 window.alert() </h2>
+<p>请看警示框！！！</p>
+<script>
+    // 使用警告框输出内容
+    window.alert("使用警告框输出内容！");
+</script>
+<h2>4、console.log()</h2>
+<p>下面使用console.log()在控制台输出内容，请按F12打开浏览器的开发者模式，切换到 console，刷新网页</p>
+<script>
+    /*
+    *  使用控制台输出内容
+    */
+    console.log("若道天涯无回路，漫漫黄沙掩枯骨。");
+</script>
+</body>
+</html>
