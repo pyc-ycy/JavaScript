@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语法</title>
+</head>
+<body>
+<h1>本文档用于 Javascript 语法的案例测试</h1>
+<h2>一、JavaScript 字面量</h2>
+<h3>1、数字</h3>
+<p><b>数字（Number）字面量</b>可以是小数或科学计数（e）</p>
+<p>科学计数 123e5表示：</p>
+<p id="num1"></p>
+<p>小数123.45表示：</p>
+<p id="num2"></p>
+<h3>2、字符串</h3>
+<p><b>字符串（String）字面量</b>由单引号或双引号括起来的字面量，</p>
+<p>单引号的字符串字面量'Hello world!'：</p>
+<p id="str1"></p>
+<p>双引号的字符串字面量"This is JavaScript"：</p>
+<p id="str2"></p>
+<p><b><em>总结：</em>由单引号或双引号</b>组成的字符串字面量，效果是一样的！</p>
+<script>
+    document.getElementById("num1").innerHTML = 123e5;
+    document.getElementById("num2").innerHTML = 123.45;
+    document.getElementById("str1").innerHTML = 'Hello world!';
+    document.getElementById("str2").innerHTML = "This is JavaScript";
+</script>
+</body>
+</html>
