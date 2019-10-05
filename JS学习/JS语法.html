@@ -20,11 +20,148 @@
 <p>双引号的字符串字面量"This is JavaScript"：</p>
 <p id="str2"></p>
 <p><b><em>总结：</em>由单引号或双引号</b>组成的字符串字面量，效果是一样的！</p>
+<h3>3、表达式字面量</h3>
+<p><b>表达式字面量</b>是由一些简单的加减乘除所构成的运算表达式</p>
+<p>表达式（(1+8*10）)/5：</p>
+<p id="bds"></p>
+<h3>4、其他字面量</h3>
+<p>除了上面的三种，还有<b>数组字面量、对象字面量和函数字面量</b></p>
+<p>数组：</p>
+<p id="sz"></p>
+<p>对象：</p>
+<p id="dx"></p>
+<p>函数：</p>
+<p id="hs"></p>
 <script>
+    var a =10;
+    var b = 2;
+    var c = {firstname: "youcong", lastname: "peng", age: 20};
+    function myFunction(a, b) {return a+b;};
     document.getElementById("num1").innerHTML = 123e5;
     document.getElementById("num2").innerHTML = 123.45;
     document.getElementById("str1").innerHTML = 'Hello world!';
     document.getElementById("str2").innerHTML = "This is JavaScript";
+    document.getElementById("bds").innerHTML = ((1 + 8) * 10) / 5;
+    document.getElementById("sz").innerHTML = [40, 100, 25, 30];
+    document.getElementById("dx").innerHTML = c.firstname +' ' + c.lastname;
+    document.getElementById("hs").innerHTML = myFunction(a, b);
 </script>
+<h2>二、JavaScript 变量</h2>
+<p><b>变量</b>，顾名思义，一种量可以更变得存在物。变量在编程语言中，通常作为存储数据用。</p>
+<p>在<b> JavaScript </b>中，无论是什么储存什么类型的数据的变量，统一用关键字：<b><em>var</em></b>来声明，用等号来赋值。变量与字面量的区别在于：自声明之后，其值是否可变更。</p>
+<p>例如下面这个案例：</p>
+<p>var x;<br>x = 15; // 输出一次<br> x = 20; // 再输出一次</p>
+<p>初始值：x=</p>
+<p id="value1"></p>
+<p>重新赋值后：x=</p>
+<p id="value2"></p>
+<script>
+    var x;
+    x= 15;
+    document.getElementById("value1").innerHTML = x;
+    x = 20;
+    document.getElementById("value2").innerHTML = x;
+</script>
+<h2>三、其他相关语法概念</h2>
+<h3>1、JavaScript 操作符</h3>
+<p>主要是一些运算符，有<b>赋值运算符、算术运算符、位运算符、条件运算符、比较运算符和逻辑运算符</b></p>
+<h3>2、JavaScript 语句</h3>
+<p>语句以行为单位，每行语句中可以由<b>关键字、变量或字面量、操作符构成</b>，并不一定要三者同时出现，但至少有一者。</p>
+<h3>3、JavaScript 关键字</h3>
+<p><b>关键字</b>，是一些 JavaScript 的保留字，是有特殊含义和作用的标识。以下 JavaScript 中比较常用的关键字：</p>
+<table class="reference">
+    <tbody><tr>
+        <td>abstract</td>
+        <td>else</td>
+        <td>instanceof</td>
+        <td>super</td>
+    </tr><tr>
+    </tr><tr>
+        <td>boolean</td>
+        <td>enum</td>
+        <td>int</td>
+        <td>switch</td>
+    </tr><tr>
+    </tr><tr>
+        <td>break</td>
+        <td>export</td>
+        <td>interface</td>
+        <td>synchronized</td>
+    </tr><tr>
+    </tr><tr>
+        <td>byte</td>
+        <td>extends</td>
+        <td>let</td>
+        <td>this</td>
+    </tr><tr>
+    </tr><tr>
+        <td>case</td>
+        <td>false</td>
+        <td>long</td>
+        <td>throw</td>
+    </tr><tr>
+    </tr><tr>
+        <td>catch</td>
+        <td>final</td>
+        <td>native</td>
+        <td>throws</td>
+    </tr><tr>
+    </tr><tr>
+        <td>char</td>
+        <td>finally</td>
+        <td>new</td>
+        <td>transient</td>
+    </tr><tr>
+    </tr><tr>
+        <td>class</td>
+        <td>float</td>
+        <td>null</td>
+        <td>true</td>
+    </tr><tr>
+    </tr><tr>
+        <td>const</td>
+        <td>for</td>
+        <td>package</td>
+        <td>try</td>
+    </tr><tr>
+    </tr><tr>
+        <td>continue</td>
+        <td>function</td>
+        <td>private</td>
+        <td>typeof</td>
+    </tr><tr>
+    </tr><tr>
+        <td>debugger</td>
+        <td>goto</td>
+        <td>protected</td>
+        <td>var</td>
+    </tr><tr>
+    </tr><tr>
+        <td>default</td>
+        <td>if</td>
+        <td>public</td>
+        <td>void</td>
+    </tr><tr>
+    </tr><tr>
+        <td>delete</td>
+        <td>implements</td>
+        <td>return</td>
+        <td>volatile</td>
+    </tr><tr>
+    </tr><tr>
+        <td>do</td>
+        <td>import</td>
+        <td>short</td>
+        <td>while</td>
+    </tr><tr>
+    </tr><tr>
+        <td>double</td>
+        <td>in</td>
+        <td>static</td>
+        <td>with</td>
+    </tr><tr>
+    </tr></tbody></table>
+<h3>4、JavaScript 注释</h3>
+<p>JavaScript  中使用 “//" 作为语句的注释符，注释符之后的同一行的全部内容都不会执行。</p>
 </body>
 </html>
