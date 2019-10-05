@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript 语句</title>
+</head>
+<body>
+<h2>JavaScript学习——JavaScript语句</h2>
+<h3>1、什么是JavaScript语句</h3>
+<p>JavaScript 语句是发给浏览器的命令，这些命令的作用是告诉浏览器要做的事情。<br>
+    JavaScript 语句和 C/C++ 一样以分号作为语句的结束标志。在写 JavaScript 代码的时候，要养成每句语句结束加分号的习惯。<br>
+    语句结束符的存在作用除了可以用于区分不同的语句，还可以使诸多简短的语句写在同一行时，浏览器不会混淆。<br>
+</p>
+<h3>2、JavaScript 代码</h3>
+<p>
+    JavaScript 代码是按照一定顺序写在某一区域的 JavaScript 语句序列<br>
+    例如下面：<br>
+    document.getElementById("demo").innerHTML="你好 Dolly";<br>
+    document.getElementById("myDIV").innerHTML="你最近怎么样?";<br>
+    就是在 ID 为 demo 的地方输出“你好，Dolly”，在 ID 为 myDIV 的地方输出“你最近怎么样？”<br>
+    下面两个段落，作为代码执行的显示区域：
+</p>
+<p>语句1显示如下：</p>
+<p id="demo"></p>
+<p>语句2显示如下：</p>
+<p id="myDIV"></p>
+<script>
+    document.getElementById("demo").innerHTML="你好 Dolly";
+    document.getElementById("myDIV").innerHTML="你最近怎么样?";
+</script>
+</body>
+</html>
