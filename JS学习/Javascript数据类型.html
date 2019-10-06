@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript数据类型</title>
+    <style type="text/css">
+        body{text-align: center}
+        .bg{
+            color: #000000;
+            margin:5px auto;
+            width:1000px;
+            height:auto;
+            border:1px solid #000000;
+            background: black;
+        }
+        .textBg{
+            color: #000000;
+            margin:5px auto;
+            width:1000px;
+            height:auto;
+            border:1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+<h2 style="text-align: center"><span style="color: darkgrey">Javascript学习——Javascript数据类型</span> </h2>
+<HR align="center" width="1000" color="#987cb9" size="1">
+<h3 style="text-align: center"><span style="color: cornflowerblue">1、概述</span> </h3>
+<p class="textBg" style="text-align: left">
+    Javascript的数据类型，大致可以分为：<b>值类型（基本类型）和引用数据类型</b><br>
+    <b>值类型：</b>字符串（String）、数字（Number）、布尔（Boolean）、对空（Null）、未定义（Undefined）、Symbol。<br>
+    <b>引用数据类型：</b>对象（Object）、数组（Array）、函数（Function）。<br>
+    <b>注：</b>Symbol 是 ES6 引入的一种新的数据类型，表示独一无二的值。
+</p>
+<h3 style="text-align: center"><span style="color: cornflowerblue">2、Javascript的动态类型</span> </h3>
+<p class="textBg" style="text-align: left">
+    Javascript 拥有动态类型，所谓动态就是：同一个变量（同名）可以用作不同的类型。<br>
+    <b>如下：</b><br>
+    <span style="color: coral">
+        var x;      // x 为 Undefined<br>
+        var x = 5;  // x 为数字<br>
+        var x = "John"; // x 为字符串
+    </span>
+</p>
+<h3 style="text-align: center"><span style="color: cornflowerblue">3、Javascript字符串</span> </h3>
+<p class="textBg" style="text-align: left">
+    字符串是存储字符——由单引号或双引号括起来的字——的变量。<br>
+    Javascript的字符串与 C/C++ 不同，与 Python 的一样。<br>
+    不过为了方便，建议用双引号来作为字符串标志。<br>
+    下面是声明和使用字符串的示例：<br>
+</p>
+<p class="bg" style="text-align: left">
+    <span  style="color: coral">
+        var str1 = "Hello Javascript";<br>
+        var str2 = "I want to learn Javascript";<br>
+        var str3 = "I will study Javascript day by day";<br>
+        document.getElementById("str1").innerHTML = str1;<br>
+        document.getElementById("str2").innerHTML = str2;<br>
+        document.getElementById("str3").innerHTML = str3;
+    </span>
+</p>
+<p class="textBg" style="text-align: left">
+    下面是效果展示：<br>
+    <span style="color: darkgrey" id="str1"></span><br>
+    <span style="color: blueviolet" id="str2"></span><br>
+    <span style="color: aqua" id="str3"></span><br>
+</p>
+<script>
+    var str1 = "Hello Javascript";
+    var str2 = "I want to learn Javascript";
+    var str3 = "I will study Javascript day by day";
+    document.getElementById("str1").innerHTML = str1;
+    document.getElementById("str2").innerHTML = str2;
+    document.getElementById("str3").innerHTML = str3;
+</script>
+</body>
+</html>
