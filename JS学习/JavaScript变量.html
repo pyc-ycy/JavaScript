@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript变量</title>
+</head>
+<body>
+<h2><span style="color: lightblue">Javascript学习——Javascript变量</span></h2>
+<h3><span style="color: blue; ">1、何为Javascript变量</span></h3>
+<p>
+    Javascript变量和其他编程语言一样，是一种容器，可用于存放值或表达式。<br>
+    Javascript变量可以是一个的字母，也可以是具有描述性的英文单词，或中文拼音的简拼、全拼。<br>
+    Javascript变量有以下几个要求：<br>
+    1、变量名必须以字母开头。<br>
+    2、变量名不能与关键字一样。<br>
+    3、变量名对大小写敏感。<br>
+</p>
+<h3><span style="color: blue">2、如何声明使用变量</span></h3>
+<h4><span style="color: aquamarine">2.1、声明变量</span></h4>
+<p>
+    Javascript中，变量的声明是使用关键字<b>var</b>来声明;<br>
+    例如：<br>
+    <span style="color: coral">
+        var carName = "Volvo";<br>
+        var data = 25;<br>
+    </span>
+</p>
+<h4><span style="color: aquamarine">2.2、使用变量</span></h4>
+<p>
+    像2.1中声明了变量后，要怎么使用呢？<br>
+    变量的使用方式主要有两种：<b>直接输出和与操作符结合参与表达式运算</b><br>
+    直接输出的使用形式如下：<br>
+    <span style="color: coral">
+        var str="我是字符串输出";<br>
+        document.getElementById("str").innerHTML = str;<br>
+    </span>
+    下面的段落是效果展示：<br>
+</p>
+<span style="color: blueviolet">
+    <p id="str"> </p>
+</span>
+<script>
+    var str = "我是字符串输出";
+    document.getElementById("str").innerHTML = str;
+</script>
+<p>
+    值得注意的是，在其他编程语言中如果变量声明了后没有赋值，那么使用的时候会出现乱码或出现错误。<br>
+    在 Javascript 中，变量声明后，未经赋值便使用的话，程序会自动赋一个“undefined”做为值。<br>
+    如下：<br>
+    <span style="color: coral">
+        var temp;<br>
+        document.getElementById("temp").innerHTML = temp;<br>
+    </span>
+    下面是效果展示：<br>
+    <span id="temp" style="color: blueviolet"></span>
+</p>
+<script>
+    var temp;
+    document.getElementById("temp").innerHTML = temp;
+</script>
+</body>
+</html>
