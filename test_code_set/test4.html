@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test4</title>
+    <style type="text/css">
+        body {
+            text-align: center
+        }
+
+        .bg {
+            color: #000000;
+            margin: 5px auto;
+            width: 1000px;
+            height: auto;
+            border: 1px solid #000000;
+            background: black;
+        }
+
+        .textBg {
+            color: #000000;
+            margin: 5px auto;
+            width: 1000px;
+            height: auto;
+            border: 1px solid #000000;
+        }
+
+        .one {
+            border-style: solid;
+            border-width: 1px;
+            border-color: aquamarine;
+            margin: auto;
+            width: 1005px;
+            height: auto;
+        }
+
+        .two {
+            border-style: solid;
+            border-width: 1px;
+            border-color: gray;
+            margin: auto;
+            width: 1005px;
+            height: auto;
+        }
+
+        .three {
+            border-style: groove;
+            border-width: 10px;
+            border-color: slategrey;
+            margin: auto;
+            width: 1005px;
+            height: auto;
+        }
+
+        .four {
+            border-style: dashed;
+            border-width: 1px;
+            border-color: slategrey;
+            margin: auto;
+            width: 1005px;
+            height: auto;
+        }
+    </style>
+    <style type="text/css" title="字体14号">
+        p{
+            text-align: left;
+            font-size: 14px;
+            line-height: 25px;
+            text-indent: 2em;
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+    <style type="text/css" title="字体18号">
+        p{
+            text-align: left;
+            font-size: 18px;
+            line-height: 25px;
+            text-indent: 2em;
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<hgroup class="textBg">
+    <h2 style="text-align: center"><span style="color: deepskyblue">contentEditable属性示例</span> </h2>
+    <h3 style="text-align: left">可编辑列表</h3>
+    <ul contenteditable="true">
+        <li>列表元素1</li>
+        <li>列表元素2</li>
+        <li>列表元素3</li>
+    </ul>
+    <h2 style="text-align: center"><span style="color: deepskyblue">contextmenu属性</span> </h2>
+    <div  contextmenu="myMenu">上下文菜单
+        <menu type="context" id="myMenu">
+            <menuitem label="微信分享"></menuitem>
+            <menuitem label="微博分享"></menuitem>
+        </menu>
+    </div>
+    <h3 style="text-align: center">文字字体测试效果</h3>
+    <p>
+        “百度”这一公司名称来自于宋词“众里寻他千百度”，而“熊掌”图标的想法来源于“猎人寻迹熊爪”的刺激，与李彦宏的“分析搜索技术”非常相似，从而构成百度的搜索概念。
+    </p>
+</hgroup>
+</body>
+</html>
