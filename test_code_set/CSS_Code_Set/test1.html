@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS层叠性</title>
+    <style type="text/css">
+        div{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .Cent{
+            width: 400px;
+            border: 1px dashed #CC0099;
+            padding: 10px 15px;
+        }
+        #imp{border: 1px dashed #3366FF;}
+        .Cent{font-size: 14px;}
+        .Cent p{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .Cent .duanluo{
+            font-weight: normal;
+            line-height: 1.5em;
+            text-align: left;
+        }
+        .Cent .duanluo span{color: #009966}
+        #imp span{
+            color: #669933;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        span{font-size: 30px !important;}
+        .blue{color: Blue;}
+        #header{color: Gray;}
+    </style>
+</head>
+<body>
+<div class="Cent" id="imp">
+    <p class="duanluo" id="DL">
+        <span>CSS</span>(Cascading Style Sheet,可以翻译为“层叠式样表”或“级联式样表”)，是一组格式设置规则，用于控制 Web 页面的外观。
+        通过使用 CSS 样式设置页面的格式，可将页面的内容与表现形式分离。页面内容存放在 HTML 文档中，而用于定义表现形式的 CSS 规则则存放在
+        另一个文件或 HTML 文档的某一个部分，通常为文件头部分。将内容与表现形式分离，不仅可以使维护站点的外观更容易，而且还可以使 HTML 代码更为简练
+        缩短浏览器加载时间。
+    </p>
+</div>
+<div id="header" class="blue" style="color: Yellow">内部优先</div>
+</body>
+</html>
