@@ -17,6 +17,7 @@
 </head>
 <body>
 <div id="top"></div>
+<div id="toBottom" style="color: magenta"><a title="跳到页未" href="#footer">去到底部</a></div>
 <div id="main">
     <div id="content">
         <div id="title">CSS3选择器</div>
@@ -91,7 +92,7 @@
                                 </span>
                                 </div>
                                 <p>效果如下图所示：</p>
-                                <img src="test1.jpg" alt="由于某种原因，图片无法加载。"/>
+                                <img src="test1.jpg" alt="由于某种原因，图片无法加载。" title="上述示例运行效果图"/>
                                 <p>
                                     第二段应用了属性.font18px，因此字体显得更大些。<br>
                                     示例2：
@@ -110,7 +111,7 @@
                                     </span>
                                 </div>
                                 <p>效果如下图：</p>
-                                <img src="test2.jpg" alt="由于某种原因，图片无法加载。"/>
+                                <img src="test2.jpg" alt="由于某种原因，图片无法加载。" title="上述示例运行效果图"/>
                                 <p>
                                     第一段应用了属性.underline；第三段则应用了.italic;<br>
                                     第二段则用了三个属性：.font18px .underline .italic<br>
@@ -150,8 +151,40 @@
                                     </span>
                                 </div>
                                 <p>效果如下图：</p>
-                                <img src="test4.jpg" alt="由于未知原因，图片无法加载！"/>
+                                <img src="test4.jpg" alt="由于未知原因，图片无法加载！" title="上述示例运行效果图"/>
+                                <p>
+                                    也可以在 ID 选择器之前增加一个 HTML 元素标签，针对上例则可以增加一个 div 组成 div#box<br>
+                                    此时的优先级会大于原来单纯的 #box，也即是说，在同等条件下，浏览器会优先解析 div#box 选择器定义的样式。<br>
+                                    <b>一般通过 ID 选择器来定翼 HTML 框架的布局效果，因为 HTML 框架元素的 id 都是唯一的。</b>
+                                </p>
                             </div>
+                            <h4><b>4、通配选择器</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    如果 HTML 所有元素都需要定翼相同的样式，则可以使用<b>通配符选择器</b>；通配符选择器通过<b>(*)</b>来表示。<br>
+                                    示例：
+                                </p>
+                                <div class="bg">
+                                    <span style="font-size: 16px; color: blue; text-align: left">
+                                        *{<br>
+                                        &nbsp;margin:0;<br>
+                                        &nbsp;padding:0;<br>
+                                        }
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub">三、组合选择器</div>
+        <div class="box">
+            <div class="tl">
+                <div class="tr">
+                    <div class="bl">
+                        <div class="content bl">
+                            <p>当把两个或多个基本选择器组合在一起，就形成了一个复杂的选择器，即<b>组合选择器。</b></p>
                         </div>
                     </div>
                 </div>

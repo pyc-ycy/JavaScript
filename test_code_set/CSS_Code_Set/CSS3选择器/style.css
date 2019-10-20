@@ -60,6 +60,17 @@ pre {
     background: url(bg_top1.gif) #fff repeat-x left top;
     overflow: hidden;
 }
+#toBottom {
+    width: 776px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    font-size: 14px;
+    padding: 0px;
+    height: 14px;
+    background: url(bg_top1.gif) #fff repeat-x left top;
+    overflow: hidden;
+}
 #top1 {
     width: 776px;
     margin-right: auto;
