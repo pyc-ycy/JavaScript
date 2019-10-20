@@ -8,10 +8,10 @@
         .bg {
             color: #000000;
             margin: 5px auto;
-            width: 650px;
+            width: 671px;
             height: auto;
             border: 1px solid #000000;
-            background: gray;
+            background: darkgray;
         }
     </style>
 </head>
@@ -54,16 +54,104 @@
                     <div class="b1">
                         <div class="content br">
                             <h4><b>1、标签选择器</b></h4>
-                            <p>示例代码：<br>
-                                <span style="color: blueviolet">
+                            <div class="code_p">
+                                <p>
+                                    标签选择器直接引用 HTML 标签名称，也称为类型选择器，规定了网页元素在页面中的默认显示方式。<br>
+                                    示例代码：
+                                </p>
+                                <div class="bg">
+                                    <span style="color: blue; font-size: 16px">
                                 &lt;style type=&quot;text/css&quot;&gt;<br>
                                  p{<br>
-                                  &nbsp;  font-size:12px;<br>
+                                  &nbsp;font-size:12px;<br>
                                   &nbsp;color:red;<br>
                                 }<br>
                                &lt;/style&gt;
                                 </span>
-                            </p>
+                                </div>
+                            </div>
+                            <h4><b>2、类选择器</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    类选择器能够为网页对象定义不同的样式，实现不同元素拥有相同的样式，相同元素拥有不同样式。<br>
+                                    类选择器一个<b>（.）</b>前缀开头，紧跟一个自定义类名。<br>
+                                    应用类样式可以用<b>class 属性</b>来实现。<br>
+                                    示例代码：<br>
+                                    示例1：
+                                </p>
+                                <div class="bg">
+                                <span style=" color: blue; text-align: left; font-size: 16px">
+                                    &lt;style type=&quot;text/css&quot;&gt;<br>
+                                    p{<br>
+                                        &nbsp;font-size:12px;<br>
+                                        &nbsp;color:red;<br>
+                                    }<br>
+                                    .font18px{font-size:18px;}<br>
+                                    &lt;/style&gt;
+                                </span>
+                                </div>
+                                <p>效果如下图所示：</p>
+                                <img src="test1.jpg" alt="由于某种原因，图片无法加载。"/>
+                                <p>
+                                    第二段应用了属性.font18px，因此字体显得更大些。<br>
+                                    示例2：
+                                </p>
+                                <div class="bg">
+                                    <span style="text-align: left; font-size: 16px; color: blue">
+                                        &lt;style type=&quot;text/css&quot;&gt;<br>
+                                    p{<br>
+                                        &nbsp;font-size:12px;<br>
+                                        &nbsp;color:red;<br>
+                                    }<br>
+                                    .font18px{font-size:18px;}<br>
+                                    .underline{ text-decoration:underline;}<br>
+                                    .italic{ font-style:italic;}<br>
+                                    &lt;/style&gt;
+                                    </span>
+                                </div>
+                                <p>效果如下图：</p>
+                                <img src="test2.jpg" alt="由于某种原因，图片无法加载。"/>
+                                <p>
+                                    第一段应用了属性.underline；第三段则应用了.italic;<br>
+                                    第二段则用了三个属性：.font18px .underline .italic<br>
+                                    示例3：
+                                </p>
+                                <div class="bg">
+                                    <span style="text-align: left; font-size: 16px; color: blue">
+                                        &lt;style type=&quot;text/css&quot;&gt;<br>
+                                    p{<br>
+                                        &nbsp;font-size:12px;<br>
+                                        &nbsp;color:red;<br>
+                                    }<br>
+                                    .font18px{font-size:18px;}<br>
+                                    p.font18px{  font-size:24px; }<br>
+                                    &lt;/style&gt;
+                                    </span>
+                                </div>
+                            </div>
+                            <h4><b>3、ID 选择器</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    ID 选择器以井号<b>(#)</b>作为前缀，紧接着是一个自定义的 ID 名。<br>
+                                    应用 ID 选择器可以使用 id 属性来实现.<br>
+                                    示例1：
+                                </p>
+                                <div class="bg">
+                                    <span style="text-align: left; color: blue; font-size: 16px">
+                                        &lt;style type=&quot;text/css&quot;&gt;<br>
+                                        #box{<br>
+                                            &nbsp;background: url(images/2.jpg) center bottom;<br>
+                                            &nbsp;height: 200px;<br>
+                                            &nbsp;width: 400px;<br>
+                                            &nbsp;border: solid 2px red;<br>
+                                            &nbsp;padding: 100px;<br>
+                                            }<br>
+                                        &lt;/style&gt;
+                                    </span>
+                                </div>
+                                <p>效果如下图：</p>
+                                <img src="test4.jpg" alt="由于未知原因，图片无法加载！"/>
+                            </div>
                         </div>
                     </div>
                 </div>
