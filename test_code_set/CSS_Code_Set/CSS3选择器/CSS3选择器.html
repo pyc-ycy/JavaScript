@@ -17,9 +17,9 @@
 </head>
 <body>
 <div id="top"></div>
-<div id="toBottom" style="color: magenta"><a title="跳到页未" href="#footer">去到底部</a></div>
+<div id="top2"></div>
 <div id="main">
-    <div id="content">
+    <div id="content"><a title="跳到页未" href="#footer">去到底部</a>
         <div id="title">CSS3选择器</div>
         <div class="sub">一、CSS3选择器分类</div>
         <div class="box">
@@ -185,6 +185,42 @@
                     <div class="bl">
                         <div class="content bl">
                             <p>当把两个或多个基本选择器组合在一起，就形成了一个复杂的选择器，即<b>组合选择器。</b></p>
+                            <h4><b>1、包含选择器</b></h4>
+                            <div class="code_p">
+                                <p>示例1</p>
+                                <div class="bg">
+                                    <span style="font-size: 16px; color: blue; text-align: left">
+                                        &lt;style type=&quot;text/css&quot;&gt<br>
+                                        &nbsp;#header p {font-size:14px;}<br>
+                                        &nbsp;#main p {font-size:12px;}<br>
+                                        &lt;/style&gt;
+                                    </span>
+                                </div>
+                                <p>效果如下图：</p>
+                                <img src="test5.jpg" alt="由于未知原因，图片无法加载！！" title="包含选择器示例1运行效果图"/>
+                            </div>
+                            <h4><b>2、子选择器</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    子选择器，是<b>指定父元素包含的子元素。</b><br>
+                                    子选择器使用<b>"<"</b>表示。
+                                    示例：
+                                </p>
+                                <div class="bg">
+                                    <span style="font-size: 16px; text-align: left; color: blue">
+                                        &lt;style type=&quot;text/css&quot;&gt;<br>
+                                        &nbsp; span{/*span 元素默认样式*/<br>
+                                        &nbsp;&nbsp;&nbsp;font-size:12px;<br>
+                                        &nbsp;}<br>
+                                        &nbsp;div &lt; span { /*div 元素包含的 span 子元素的默认样式*/<br>
+                                        &nbsp;&nbsp;&nbsp;font-size:24px;<br>
+                                        &nbsp;}<br>
+                                        &lt;/style&gt;
+                                    </span>
+                                </div>
+                                <p>运行效果如下图：</p>
+                                <img src="test6.jpg" alt="由于未知原因，图片无法加载！！" title="子选择器示例图"/>
+                            </div>
                         </div>
                     </div>
                 </div>

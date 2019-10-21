@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>包含选择器示例1</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background: antiquewhite;
+        }
+        .body_div{
+            margin:auto;
+            border-style: groove;
+            border-color: blue;
+            border-width: thin;
+            width: 1050px;
+            height: auto;
+            background: beige;
+        }
+        h3{
+            color: darkcyan;
+            text-align: center;
+            font-family: 华文行楷,serif;
+        }
+        #header > p{font-size: 14px;}
+        #main > p{font-size: 12px;}
+    </style>
+</head>
+<body>
+<h3>以下为演示区域：</h3>
+<div class="body_div">
+    <div id="wrap">
+        <div id="header">
+            <p>头部区域第1段文本</p>
+            <p>头部区域第2段文本</p>
+            <p>头部区域第3段文本</p>
+        </div>
+        <div id="main">
+            <p>主体区域第1段文本</p>
+            <p>主体区域第2段文本</p>
+            <p>主体区域第3段文本</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子选择器示例</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background: antiquewhite;
+        }
+        .body_div{
+            margin:auto;
+            border-style: groove;
+            border-color: blue;
+            border-width: thin;
+            width: 1050px;
+            height: auto;
+            background: beige;
+        }
+        h3{
+            color: darkcyan;
+            text-align: center;
+            font-family: 华文行楷,serif;
+        }
+        span{ font-size: 12px;}
+        div > span{ font-size: 24px;}
+    </style>
+</head>
+<body>
+<div class="body_div">
+    <h3>
+        <span>HTML 文档树状结构</span>
+    </h3>
+    <div id="box">
+        <span class="font24px">问君能有几多愁？恰似一江春水向东流。</span>
+    </div>
+</div>
+</body>
+</html>
