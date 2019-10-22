@@ -221,6 +221,64 @@
                                 <p>运行效果如下图：</p>
                                 <img src="test6.jpg" alt="由于未知原因，图片无法加载！！" title="子选择器示例图"/>
                             </div>
+                            <h4><b>3、相邻选择器</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    相邻选择器，通过加号<b>(+)</b>分隔符进行定义。其基本结构是<b>第一个选择器指定前面相邻元素，
+                                    后面选择器指定相邻元素。</b><br>
+                                    前后选择符的关系是兄弟关系，即在 HTML 结构中，两个标签前为兄后为弟，<b>否则样式无法应用。</b><br>
+                                    示例：
+                                </p>
+                                <div class="bg">
+                                    <span style="text-align: left; font-size: 16px; color: blue">
+                                        &lt;style type=&quot;text/css&quot;&gt;<br>
+                                        &nbsp; h2,p,h3 {<br>
+                                        &nbsp;&nbsp;&nbsp;margin:0;<br>
+                                        &nbsp;&nbsp;&nbsp;padding:0;<br>
+                                        &nbsp;&nbsp;&nbsp;height:30px;<br>
+                                        &nbsp;}<br>
+                                        &nbsp;p+h3{ background-color:#0099FF; }<br>
+                                        &lt;/style&gt;
+                                    </span>
+                                </div>
+                                <p>运行效果如下图：</p>
+                                <img src="test7.jpg" alt="由于未知原因，图片无法加载！" title="相邻选择器运行示例图"/>
+                            </div>
+                            <h4><b>4、兄弟选择器</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    CSS3 增加了新的选择器组合形式——兄弟选择器。通过<b>波浪号（~）</b>分隔符进行定义。
+                                    其基本结构是第一个选择器指定同级前置元素，后面的选择器指定其后同级所有匹配元素。
+                                    前后选择符的关系是兄弟关系，即在 HTML 结构中，两个标签前为兄后为弟，<b>否则样式无法应用。</b><br>
+                                    对于示例只需将相邻选择器的示例进行修改，将加号改成波浪号即可。
+                                </p>
+                            </div>
+                            <h4><b>5、分组选择器</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    分组选择器通过<b>（,）</b>分隔符进行定义。其基本结构是第一个选择器指定匹配元素，后面选择器指定另一个匹配元素
+                                    ，最后把前面选择器匹配的元素都选取出来。通过分组选择器可以实现集体声明，将样式表中一致的CSS样式放在一起，减少书写代码量。<br>
+                                    示例：
+                                </p>
+                                <div class="bg">
+                                    <span style="text-align: left;font-size: 16px;color: blue">
+                                        &lt;script type=&quot;text/javascript&quot; src=&quot;IE8.js&quot;&gt;&lt;/script&gt;<br>
+                                        &lt;style type=&quot;text/css&quot;&gt;<br>
+                                            &nbsp;&nbsp;h2,h3,h4,h5,h6{<br>
+                                            &nbsp;&nbsp;background-color: #99CC33;<br>
+                                            &nbsp;&nbsp;margin: 0;<br>
+                                            &nbsp;&nbsp;margin-bottom: 10px;<br>
+                                        &nbsp;}<br>
+                                        &nbsp;h2+h3,h4+h5{color: #0099FF;}<br>
+                                        &nbsp;body>h6,h1>span,h4>span{font-size: 20px;}<br>
+                                        &nbsp;h2 span,h3 span{padding: 0 20px;}<br>
+                                        &nbsp;h5 span[class],h6 span[class]{background-color: #CC0033;}<br>
+                                        &lt;/style&gt;
+                                    </span>
+                                </div>
+                                <p>运行效果如下图：</p>
+                                <img src="test8.jpg" alt="由于未知原因，图片无法加载！" title="分组选择器示例图"/>
+                            </div>
                         </div>
                     </div>
                 </div>

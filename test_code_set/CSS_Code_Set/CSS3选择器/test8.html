@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分组选择器示例</title>
+    <script type="text/javascript" src="IE8.js"></script>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background: antiquewhite;
+        }
+        .body_div{
+            margin:auto;
+            border-style: groove;
+            border-color: blue;
+            border-width: thin;
+            width: 1050px;
+            height: auto;
+            background: beige;
+        }
+        h1{
+            color: darkcyan;
+            text-align: center;
+            font-family: 华文行楷,serif;
+        }
+        h2,h3,h4,h5,h6{
+            background-color: #99CC33;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        h2+h3,h4+h5{color: #0099FF;}
+        body>h6,h1>span,h4>span{font-size: 20px;}
+        h2 span,h3 span{padding: 0 20px;}
+        h5 span[class],h6 span[class]{background-color: #CC0033;}
+    </style>
+</head>
+<body>
+<h1>以下为演示区域：</h1>
+<div class="body_div">
+    <h2>h2元素<span>这里是span元素</span></h2>
+    <h3>h2元素<span>这里是span元素</span></h3>
+    <h4>h2元素<span>这里是span元素</span></h4>
+    <h5>h2元素<span class="S1">这里是span元素</span></h5>
+    <h6>h2元素<span class="S2">这里是span元素</span></h6>
+</div>
+</body>
+</html>
