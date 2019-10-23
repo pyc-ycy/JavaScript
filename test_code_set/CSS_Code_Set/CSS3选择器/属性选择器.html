@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器示例</title>
+    <style type="text/css">
+        body{
+            text-align: center;
+            background: antiquewhite;
+        }
+        .body_div{
+            margin:auto;
+            border-style: groove;
+            border-color: blue;
+            border-width: thin;
+            width: 1050px;
+            height: auto;
+            background: beige;
+        }
+        h1{
+            color: darkcyan;
+            text-align: center;
+            font-family: 华文行楷,serif;
+        }
+        /*灯箱外框式样*/
+        .pic_box {
+            border: solid 6px #bbb;
+            position: relative;
+            float: left;
+        }
+
+        .pic_box img {
+            width: 500px;
+            border: solid 1px #fff;
+        }
+        /*导航框式样*/
+        .nav{
+            background: #999;
+            border: 1px solid #ccc;
+            padding: 4px 12px;
+            float: left;
+            opacity: 0.6;
+            position: absolute;
+            bottom: 6px;
+            right: 12px;i
+        }
+        .nav a{
+            float: left;
+            display: block;
+            height: 20px;
+            line-height: 20px;
+            width: 20px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            text-align: center;
+            background: #f36;
+            color: green;
+            margin-right: 5px;
+            text-decoration: none;
+        }
+        .nav a:hover{
+            background: green;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<h1>以下为演示区域</h1>
+<div class="body_div">
+    <div class="pic_box">
+        <img src="images/bg1.jpg" alt="未知原因导致图片无法加载"/>
+        <div class="nav">
+            <a href="CSS3选择器.html" class="links item first" title="w3cplus" target="_blank" id="first" >1</a>
+            <a href="test1.html" class="links active item" title="test website" target="_blank" lang="zh">2</a>
+            <a href="test3.html" class="links item" title="this is a link" lang="zh-cn">3</a>
+            <a href="test4.html" class="links item" target="_balnk" lang="zh-tw">4</a>
+            <a href="test5.html" class="links item" title="zh-cn">5</a>
+            <a href="https://blog.csdn.net/qq_42896653" class="links item" title="我的CSDN博客" lang="zh">6</a>
+            <a href="test7.html" class="links item" title="open the website" lang="cn">7</a>
+            <a href="test8.html" class="links item" title="close the website" lang="en-zh">8</a>
+            <a href="http://www.baidu.com" class="links item" title="http://www.baidu.com">9</a>
+            <a href="https://github.com/pyc-ycy/JavaScript" class="links item last" id="last">10</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
