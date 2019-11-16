@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Demo</title>
+    <script type="text/javascript" language="javascript">
+        var elementList = " ";
+        function getElement(node){
+            var total = 0;
+            if(node.nodeType === 1){
+                total++;
+                elementList = elementList + node.nodeName + "、";
+            }
+            var childrens = node.childNodes;
+            for(var m=node.firstChild;m!=null;m=m.nextSibling){
+                total += getElement(m);
+            }
+            return total;
+        }
+        function show(){
+            var number = getElement(document);
+            elementList = elementList.substring(0,elementList-1);
+            window.alert("该文档包含："+elementList+"等"+number+"个标记！");
+            elementList = " ";
+        }
+    </script>
+</head>
+<body onload="show()">
+<p>欢迎访问御承扬的博客</p>
+<br>
+<a href="https://blog.csdn.net/qq_42896653">https://blog.csdn.net/qq_42896653</a>
+</body>
+</html>

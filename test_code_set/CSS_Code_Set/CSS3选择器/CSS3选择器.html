@@ -7,10 +7,10 @@
     <style type="text/css">
         .bg {
             color: #000000;
-            margin: 5px auto;
-            width: 671px;
+            margin:0;
+            width: 665px;
             height: auto;
-            border: 1px solid #000000;
+            border: 1px #000000;
             background: darkgray;
         }
     </style>
@@ -184,7 +184,7 @@
                 <div class="tr">
                     <div class="bl">
                         <div class="content bl">
-                            <p>当把两个或多个基本选择器组合在一起，就形成了一个复杂的选择器，即<b>组合选择器。</b></p>
+                            当把两个或多个基本选择器组合在一起，就形成了一个复杂的选择器，即<b>组合选择器。</b>
                             <h4><b>1、包含选择器</b></h4>
                             <div class="code_p">
                                 <p>示例1</p>
@@ -278,6 +278,49 @@
                                 </div>
                                 <p>运行效果如下图：</p>
                                 <img src="test8.jpg" alt="由于未知原因，图片无法加载！" title="分组选择器示例图"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub">四、伪类选择器</div>
+        <div class="box">
+            <div class="tl">
+                <div class="tr">
+                    <div class="bl">
+                        <div class="content bl">
+                                伪选择器包括伪类和伪对象选择器，伪选择器以冒号<b>(:)</b>作为前缀标识符。冒号前可以添加选择符，限定伪类应用的范围，
+                                冒号的后面为伪类和伪对象名，<b>冒号前后没有空格，否则将错认为类选择器。</b><br>
+                                CSS伪类选择器有两种用法：<br>
+                                <b>单纯式：E:pseudo-class{property:value}</b><br>
+                                <b>混用式：E.class:pseudo-class{property:value}</b><br>
+                                其中，E为元素，.class表示类选择符，pseudo-class为伪类名称，property为CSS属性，value为属性值。<br>
+                                CSS3的伪类选择器只要包括：<b>动态伪类、伪结构类、否定伪类和状态伪类。</b>
+                            <h4><b>1、动态伪类</b></h4>
+                            <div class="code_p">
+                                <p>
+                                    动态伪类是一类行为样式，这些伪类并不能存在于 HTML 中，只有当用户与页面进行交互时才能体现出来。
+                                    动态伪类选择器包括两种形式：<br>
+                                    1）锚点伪类，链接中常见的样式，如<b>link、:visited。</b>
+                                    2）行为伪类，即用户操作伪类，如<b>hover、:active和:focus。</b>
+                                </p>
+                                <div class="bg">
+                                    <span style="text-align: left; font-size: 14px; color: blue">
+                                        /*链接没有访问时前景色为灰色*/<br>
+                                        .demo a:link{color:gray;}<br>
+                                        /*链接被访问后前景色为黄色*/<br>
+                                        .demo a:visited{color:yellow}<br>
+                                        /*鼠标悬浮在连接上时前景色为绿色*/<br>
+                                        .demo a:hover{color:green}<br>
+                                        /*鼠标点击中激活链接那一下前景色为蓝色*/<br>
+                                        .demo a:active{color:blue}
+                                    </span>
+                                </div>
+                                <p>
+                                    锚点伪类的设置需要<b>注意顺序</b>，如上例子，其顺序是link->visited->hover->active。如果搞错顺序，极容易出现意想不到的错误。
+
+                                </p>
                             </div>
                         </div>
                     </div>
