@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>程序控制</title>
+</head>
+<body>
+<h3>If-else 控制语句</h3>
+<div id="out1">
+
+</div>
+<script type="text/javascript">
+    var num = parseInt(Math.random() * 99 + 1);
+
+    if (num < 60) {
+        document.getElementById("out1").innerHTML = "成绩：" + num + "不及格！"
+    } else if (num < 70) {
+        document.getElementById("out1").innerHTML = "成绩：" + num + "及格"
+    } else if (num < 85) {
+        document.getElementById("out1").innerHTML = "成绩:" + num + "良好"
+    } else {
+        document.getElementById("out1").innerHTML = "成绩：" + num + "优秀！"
+    }
+</script>
+<h3>输出杨辉三角</h3>
+<script>
+    function print(v) {
+        if (typeof v == "number") {
+            var w = 40;
+            if (n > 30) w = (n - 30) + 40;
+            var s = '<span style="padding:4px;display:inline-block;text-align:center;width:' + w + 'px;">' + v + '</span>';
+            document.write(s);
+        }else {
+            document.write(v);
+        }
+    }
+
+    var n = prompt("请输入幂数：", 9);
+    n = n - 0;
+    var t1 = new Date();
+    var a1 = [1, 1], a2 = [1, 1];
+    print('<div style="text-align:center;">');
+    print(1);
+    print("<br/>");
+    for (var i = 2; i <= n; i++) {
+        print(1);
+        for (var j = 1; j < i - 1; j++) {
+            a2[j] = a1[j - 1] + a1[j];
+            print(a2[j]);
+        }
+        a2[j] = 1;
+        for (var k = 0; k <= j; k++) {
+            a1[k] = a2[k];
+        }
+        print(1);
+        print("<br/>");
+    }
+    print("</div>");
+    var t2 = new Date();
+    print("<p style='text-align:center;'>耗时为（毫秒）：" + (t2 - t1) + "</p>");
+</script>
+</body>
+</html>

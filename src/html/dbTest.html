@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Sql</title>
+    <script type="text/javascript">
+        var db = openDatabase('mydb', '1.0', 'Test DB', 2*1024*1024);
+        var msg;
+
+        db.transaction(function (tx) {
+            tx.executeSql('CREATE TABLE IF NOT EXISTS PERSON(id, name, age, address)');
+            tx.executeSql('insert into PERSON(id, name,age, address) values (0,"ty",22,"未知")');
+            tx.executeSql('insert into PERSON(id, name, age, address) values (1,"pyc",21,"广东")');
+        });
+        function query(user) {
+            db.transaction(function (tx) {
+                tx.executeSql('select * from PERSON where name=?',[user], function (tx, results) {
+                    msg=results.rows.item(0).name+"&nbsp;"+results.rows.item(0).age+"&nbsp;"+results.rows.item(0).address;
+                    document.querySelector('#status').innerHTML += msg;
+
+                },null)
+            });
+        }
+    </script>
+</head>
+<body>
+<center>
+    <form onsubmit="query(form.username)">
+        <label for="username">输入要查找的用户名称：</label><input type="text" name="username" id="username" placeholder="用户名">
+        <input type="submit" value="查询">
+    </form>
+    <div id="status" name="status"></div>
+</center>
+</body>
+</html>
