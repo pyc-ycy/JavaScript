@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>操作字符串</title>
+    <style type="text/css">
+        body {
+            background: #bdd4e9;
+        }
+    </style>
+</head>
+<body>
+<h3>1、字符串直接量</h3>
+<p>
+    使用 eval（） 函数执行字符串化脚本：
+</p>
+<script>
+    var s = "document.write('Hello world')";
+    eval(s);
+</script>
+<h3>2、构造字符串</h3>
+<p>
+    使用 new String() 构造字符串。
+</p>
+<script type="text/javascript">
+    var s1 = new String(1);
+    var s2 = "1";
+    document.write(typeof s1);
+    document.write("<br>");
+    document.write(typeof s2);
+</script>
+<h3>3、使用字符编码</h3>
+<p>
+    使用<strong>fromCharCode()</strong>方法可以把字符编码转换成字符串。
+</p>
+<script>
+    var a = [35835, 32773, 24744, 22909], b = [];
+    for (var i in a) {
+        b.push(String.fromCharCode(a[i]));
+    }
+    document.write(b.join(""));
+</script>
+<p>
+    可以把所有字符串按顺序传给 fromCharCode()，也可以用 <strong>apply()</strong> 方法动态调用。
+</p>
+<script>
+    var a1 = [35835, 32773, 24744, 22909];
+    var b1 = String.fromCharCode.apply(null, a1);
+    document.write(b1);
+</script>
+<P>
+    <strong>charCodeAt()</strong>方法则可以把字符串转为 Unicode 编码。
+</P>
+<script>
+    var str1 = "读者你好！";
+    var num1 = str1.charCodeAt(1);
+    document.write(num1);
+</script>
+<h3>4、字符串的值</h3>
+<p>
+    使用字符串的 toString() 方法可以返回字符串的字符表示，使用 valueOf() 方法可以返回字符串的值，
+    两个方法的返回值始终相同，所以一般不直接调用这两个方法。
+</p>
+<script>
+    String.prototype.toString = function (color) {
+        var color = color || "red";
+        return '<span style="color:'+color+';">'+this.valueOf()+'</span>';
+    }
+    var s = "Javascript";
+    document.write(s.toString());
+    document.write("<br>");
+    document.write(s.toString("blue"));
+</script>
+<h3>5、字符串的长度</h3>
+<p>
+    为 String 扩展原型方法 byteLength()，该方法将枚举每个字符，并根据字符编码，
+    判断当前是单字节还是双字节，然后统计字符串的长度。
+</p>
+<script>
+    String.prototype.byteLength = function () {
+        var b = 0, l = this.length;
+        if(l){
+            for(var i=0; i<l; i++){
+                if(this.charCodeAt(i)>255){
+                    b += 2;
+                }else{
+                    b++;
+                }
+            }
+            return b;
+        }else{
+            return 0;
+        }
+    }
+
+    var str2 = "String类型长度";
+    document.write("<strong>");
+    document.write(str2.byteLength());
+    document.write("</strong>");
+</script>
+</body>
+</html>
